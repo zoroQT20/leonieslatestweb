@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Background from './components/Background';
+import Header from './components/Header';
+import Cards from './components/Cards';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex flex-col min-h-screen relative">
+      <Background />
+      <div className="relative z-10 flex flex-col flex-grow">
+        <Navbar />
+        <Header />
+        <div className="flex-grow">
+          <Cards />
+        </div>
+        <Footer />
+      </div>
+      
     </div>
   );
 }
