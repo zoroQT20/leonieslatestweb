@@ -21,7 +21,7 @@ const Header: React.FC = () => {
           Leonida's Private Pool
         </h1>
         <p className="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
-          Here at Flowbite we focus on markets where technology, innovation, and capital can unlock long-term value and drive economic growth.
+        Welcome to Leonida's Private Pool, your ideal escape for relaxation and fun! Dive into our refreshing waters, soak up the sun, and create lasting memories with family and friends. Here, it’s all about good vibes and the joy of simple pleasures—your perfect retreat awaits!
         </p>
         <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
           <Link
