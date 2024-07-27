@@ -11,7 +11,7 @@ const Header: React.FC = () => {
         backgroundPosition: 'center',
         height: '600px',
       }}
-      className="bg-gray-700 bg-blend-multiply mt-28"
+      className="bg-gray-700 bg-blend-multiply mt-20"
     >
       <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
         <h1
