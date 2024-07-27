@@ -45,7 +45,10 @@ const Cards: React.FC = () => {
                     <div className="absolute inset-0 bg-gray-900 opacity-25 transition-opacity duration-300 group-hover:opacity-0"></div>
                   </div>
                   <div className="px-6 py-4 mb-auto">
-                    <span className="font-medium text-lg block hover:text-indigo-600 transition duration-500 ease-in-out mb-2">
+                    <span 
+                      className="font-medium text-lg block hover:text-indigo-600 transition duration-500 ease-in-out mb-2"
+                      style={{ color: '#ffde59', fontFamily: 'Isidora Soft, sans-serif' }}
+                    >
                       {card.title}
                     </span>
                   </div>

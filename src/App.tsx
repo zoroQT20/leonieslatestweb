@@ -6,8 +6,8 @@ import Footer from './components/Footer';
 import Background from './components/Background';
 import Header from './components/Header';
 import Cards from './components/Cards';
-import About from './user/About'; // Import the About page
-import Contact from './user/Contact'; // Import the Contact page
+import About from './user/About';
+import Contact from './user/Contact';
 
 const App: React.FC = () => {
   return (

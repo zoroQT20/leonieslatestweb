@@ -4,9 +4,12 @@ const About: React.FC = () => {
   return (
     <section className="bg-gray-800 flex flex-col min-h-screen">
       <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 flex-grow mt-8 mb-8">
-        <h2 className="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
-          Frequently asked questions
-        </h2>
+        <h1
+          className="mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-5xl"
+          style={{ color: '#ffde59', fontFamily: 'Isidora Soft, sans-serif' }}
+        >
+          About Page
+        </h1>
         <div className="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2">
             <div>
                 <div className="mb-10">

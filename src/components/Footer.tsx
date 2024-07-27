@@ -1,5 +1,5 @@
 import React from 'react';
-import WaveLogo from '../pictures/wave logo.png'; // Adjust the path as necessary
+import WaveLogo from '../pictures/wave logo.png';
 
 const Footer: React.FC = () => {
   return (
@@ -17,22 +17,16 @@ const Footer: React.FC = () => {
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">About</a>
+              <a href="/about" className="text-[#ffde59] hover:underline me-4 md:me-6">About</a>
             </li>
             <li>
-              <a href="#" className="hover:underline me-4 md:me-6">Privacy Policy</a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline me-4 md:me-6">Licensing</a>
-            </li>
-            <li>
-              <a href="#" className="hover:underline">Contact</a>
+            <a href="/contact" className="text-[#ffde59] hover:underline">Contact</a>
             </li>
           </ul>
         </div>
         <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
-          © 2023 <a href="https://flowbite.com/" className="hover:underline">Flowbite™</a>. All Rights Reserved.
+          (2024) <a className="hover:underline">Malibong Matanda, Pandi, Bulacan</a>.
         </span>
       </div>
     </footer>
