@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
                     className="mt-1"
                     style={{ color: 'white', fontFamily: 'Isidora Soft, sans-serif' }}
                   >
-                    Phone: +639173150844
+                    Phone: (63) 917-315-0844
                   </p>
                 </div>
               </div>
