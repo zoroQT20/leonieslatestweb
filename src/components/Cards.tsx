@@ -35,21 +35,19 @@ const Cards: React.FC = () => {
           <div className="flex justify-center space-x-4">
             {cardData.slice(currentIndex, currentIndex + 2).map((card, index) => (
               <div key={index} className="flex-none w-1/2 transition-opacity duration-500 ease-in-out">
-                <div className="rounded overflow-hidden shadow-lg flex flex-col h-full">
+                <div className="rounded overflow-hidden shadow-lg flex flex-col h-full relative group">
                   <div className="relative h-full">
-                    <a href="#">
-                      <img 
-                        className="w-full h-80 object-cover" // Fixed height for all images
-                        src={card.image} 
-                        alt={card.title} 
-                      />
-                      <div className="hover:bg-transparent transition duration-300 absolute bottom-0 top-0 right-0 left-0 bg-gray-900 opacity-25"></div>
-                    </a>
+                    <img 
+                      className="w-full h-80 object-cover" // Fixed height for all images
+                      src={card.image} 
+                      alt={card.title} 
+                    />
+                    <div className="absolute inset-0 bg-gray-900 opacity-25 transition-opacity duration-300 group-hover:opacity-0"></div>
                   </div>
                   <div className="px-6 py-4 mb-auto">
-                    <a href="#" className="font-medium text-lg inline-block hover:text-indigo-600 transition duration-500 ease-in-out mb-2">
+                    <span className="font-medium text-lg block hover:text-indigo-600 transition duration-500 ease-in-out mb-2">
                       {card.title}
-                    </a>
+                    </span>
                   </div>
                 </div>
               </div>
