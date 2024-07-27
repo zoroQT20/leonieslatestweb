@@ -13,7 +13,7 @@ const Cards: React.FC = () => {
     { image: image3, title: "Bed Room Picture 1" },
     { image: image4, title: "Bed Room Picture 2" },
     { image: image5, title: "Smart TV with YouTube" },
-    { image: image6, title: "Bed Room Picture 3" },
+    { image: image6, title: "Swimming Pool Area Picture 3" },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,16 +29,16 @@ const Cards: React.FC = () => {
   }, [cardData.length]);
 
   return (
-    <div className="my-4 mb-4"> {/* Adjust top and bottom margin */}
+    <div className="my-4 mb-8">
       <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
-        <div className="relative h-80">
+        <div className="relative h-92">
           <div className="flex justify-center space-x-4">
             {cardData.slice(currentIndex, currentIndex + 2).map((card, index) => (
               <div key={index} className="flex-none w-1/2 transition-opacity duration-500 ease-in-out">
                 <div className="rounded overflow-hidden shadow-lg flex flex-col h-full relative group">
                   <div className="relative h-full">
                     <img 
-                      className="w-full h-80 object-cover" // Fixed height for all images
+                      className="w-full h-92 object-cover"
                       src={card.image} 
                       alt={card.title} 
                     />
