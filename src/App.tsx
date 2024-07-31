@@ -9,6 +9,7 @@ import Cards from './components/Cards';
 import About from './user/About';
 import Contact from './user/Contact';
 import ContactForm from './components/ContactForm';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 const App: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -66,6 +67,7 @@ const App: React.FC = () => {
           <span className="text-2xl">💬</span>
         </button>
         {isModalOpen && <ContactForm closeModal={closeModal} />}
+        <SpeedInsights />
       </div>
     </Router>
   );
