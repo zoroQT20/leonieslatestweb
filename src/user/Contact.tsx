@@ -62,7 +62,7 @@ const Contact: React.FC = () => {
                     className="mt-1"
                     style={{ color: 'white', fontFamily: 'Isidora Soft, sans-serif' }}
                   >
-                    Facebook Page: Leonidas Private Pool
+                    Facebook Page: Leonida's Private Pool
                   </p>
                   <p
                     className="mt-1"
