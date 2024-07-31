@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Navbar from './components/Navbar';
@@ -8,8 +8,14 @@ import Header from './components/Header';
 import Cards from './components/Cards';
 import About from './user/About';
 import Contact from './user/Contact';
+import ContactForm from './components/ContactForm';
 
 const App: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
   return (
     <Router>
       <div className="App flex flex-col min-h-screen relative">
@@ -53,6 +59,13 @@ const App: React.FC = () => {
             } 
           />
         </Routes>
+        <button
+          onClick={openModal}
+          className="fixed bottom-4 right-4 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-[#ffde59] text-white shadow-lg hover:shadow-xl focus:outline-none"
+        >
+          <span className="text-2xl">💬</span>
+        </button>
+        {isModalOpen && <ContactForm closeModal={closeModal} />}
       </div>
     </Router>
   );
