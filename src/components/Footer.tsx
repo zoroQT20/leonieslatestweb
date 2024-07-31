@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
           </a>
           <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0">
             <li>
-              <a href="/about" className="text-[#ffde59] hover:underline me-4 md:me-6">About</a>
+              <a href="/about" className="text-[#ffde59] hover:underline me-4 md:me-6">FAQ</a>
             </li>
             <li>
             <a href="/contact" className="text-[#ffde59] hover:underline">Contact</a>

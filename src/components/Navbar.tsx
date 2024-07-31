@@ -51,7 +51,7 @@ const Navbar: React.FC = () => {
                 href="/about" 
                 className={`block py-2 px-3 relative rounded hover:bg-[#ffde59] hover:text-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-[#ffde59] md:p-0 ${isActive('/about')}`}
               >
-                About
+                FAQ
               </a>
             </li>
             <li>
