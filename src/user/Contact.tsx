@@ -63,6 +63,7 @@ const Contact: React.FC = () => {
                     style={{ color: 'white', fontFamily: 'Isidora Soft, sans-serif' }}
                   >
                     Facebook Page: Leonida's Private Pool
+                    Email: lourdesgalvezjose@gmail.com
                   </p>
                   <p
                     className="mt-1"
