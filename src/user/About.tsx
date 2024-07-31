@@ -72,42 +72,46 @@ const About: React.FC = () => {
               </svg>
             </button>
             <div
-              id="collapse-one"
-              className={`accordion-content w-full overflow-hidden pr-4 transition-all duration-500 ${
-                openAccordion === 'accordion-1' ? 'max-h-[250px]' : 'max-h-0'
-              }`}
-              aria-labelledby="accordion-heading-one"
+            id="collapse-one"
+            className={`accordion-content w-full overflow-hidden pr-4 transition-all duration-500 ${
+                openAccordion === 'accordion-1' ? 'max-h-[500px]' : 'max-h-0'
+            } sm:max-h-[500px] md:max-h-[600px] lg:max-h-[700px] xl:max-h-[800px]`}
+            aria-labelledby="accordion-heading-one"
             >
-              <ul className="list-disc pl-6 space-y-2 text-gray-700 style={{ fontFamily: 'Isidora Soft, sans-serif' }}">
+            <ul className="list-disc pl-6 space-y-2 text-gray-700" style={{ fontFamily: 'Isidora Soft, sans-serif' }}>
                 <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Capacity: Accommodates up to 20 persons</span>
+                <span className="mr-2">•</span>
+                <span>Capacity: Accommodates up to 20 persons</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Rooms: A room for up to 10 persons</span>
+                <span className="mr-2">•</span>
+                <span>Rooms: A room for up to 10 persons</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Recreational Facilities: Basketball court, kubo</span>
+                <span className="mr-2">•</span>
+                <span>Facilities: Kubo, 2 Rest Rooms, 1 Shower Area</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Equipment: Complete cooking facilities</span>
+                <span className="mr-2">•</span>
+                <span>Recreational Facilities: Basketball court, Swimming Pool</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Connectivity: Wi-Fi connection</span>
+                <span className="mr-2">•</span>
+                <span>Equipment: Complete cooking facilities</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Entertainment: Videoke, Smart TV</span>
+                <span className="mr-2">•</span>
+                <span>Connectivity: Wi-Fi connection</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Parking: Available</span>
+                <span className="mr-2">•</span>
+                <span>Entertainment: Videoke, Smart TV</span>
                 </li>
-              </ul>
+                <li className="flex items-start">
+                <span className="mr-2">•</span>
+                <span>Parking: Available</span>
+                </li>
+            </ul>
             </div>
           </div>
 
@@ -316,30 +320,30 @@ const About: React.FC = () => {
               </svg>
             </button>
             <div
-              id="collapse-four"
-              className={`accordion-content w-full overflow-hidden pr-4 transition-all duration-500 ${
+            id="collapse-four"
+            className={`accordion-content w-full overflow-hidden pr-4 transition-all duration-500 ${
                 openAccordion === 'accordion-4' ? 'max-h-[250px]' : 'max-h-0'
-              }`}
-              aria-labelledby="accordion-heading-four"
+            }`}
+            aria-labelledby="accordion-heading-four"
             >
-              <ul className="list-disc pl-6 space-y-2 text-gray-700 style={{ fontFamily: 'Isidora Soft, sans-serif' }}">
+            <ul className="list-disc pl-0 space-y-2 text-gray-700" style={{ fontFamily: 'Isidora Soft, sans-serif' }}>
                 <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Bookings can be made via phone or email</span>
+                <span className="inline-block w-4 mr-2 text-gray-900">•</span>
+                <span>Bookings can be made by phone or email</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>50% deposit is required to secure the reservation</span>
+                <span className="inline-block w-4 mr-2 text-gray-900">•</span>
+                <span>50% deposit is required to secure the reservation</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Full payment is due 1 week before the event</span>
+                <span className="inline-block w-4 mr-2 text-gray-900">•</span>
+                <span>Full payment is due 1 week before the event</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="mr-2">•</span>
-                  <span>Payments are non-refundable</span>
+                <span className="inline-block w-4 mr-2 text-gray-900">•</span>
+                <span>Payments are non-refundable</span>
                 </li>
-              </ul>
+            </ul>
             </div>
           </div>
         </div>
