@@ -93,7 +93,7 @@ const About: React.FC = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
-                  <span>Equipment: Complete cooking facilities</span>
+                  <span>Equipment: Complete cooking facilities, Refrigerator</span>
                 </li>
                 <li className="flex items-start">
                   <span className="mr-2">•</span>
