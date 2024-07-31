@@ -37,9 +37,7 @@ const About: React.FC = () => {
               <svg
                 className={`w-6 h-6 transition duration-500 ${
                   openAccordion === 'accordion-1' ? 'text-gray-600' : 'text-gray-900'
-                } ${
-                  openAccordion === 'accordion-1' ? 'hidden' : 'block'
-                }`}
+                } ${openAccordion === 'accordion-1' ? 'hidden' : 'block'}`}
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -55,9 +53,7 @@ const About: React.FC = () => {
               <svg
                 className={`w-6 h-6 transition duration-500 ${
                   openAccordion === 'accordion-1' ? 'text-gray-600' : 'text-gray-900'
-                } ${
-                  openAccordion === 'accordion-1' ? 'block' : 'hidden'
-                }`}
+                } ${openAccordion === 'accordion-1' ? 'block' : 'hidden'}`}
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -72,46 +68,46 @@ const About: React.FC = () => {
               </svg>
             </button>
             <div
-            id="collapse-one"
-            className={`accordion-content w-full overflow-hidden pr-4 transition-all duration-500 ${
+              id="collapse-one"
+              className={`accordion-content w-full overflow-hidden pr-4 transition-all duration-500 ${
                 openAccordion === 'accordion-1' ? 'max-h-[500px]' : 'max-h-0'
-            } sm:max-h-[500px] md:max-h-[600px] lg:max-h-[700px] xl:max-h-[800px]`}
-            aria-labelledby="accordion-heading-one"
+              }`}
+              aria-labelledby="accordion-heading-one"
             >
-            <ul className="list-disc pl-6 space-y-2 text-gray-700" style={{ fontFamily: 'Isidora Soft, sans-serif' }}>
+              <ul className="list-disc pl-6 space-y-2 text-gray-700" style={{ fontFamily: 'Isidora Soft, sans-serif' }}>
                 <li className="flex items-start">
-                <span className="mr-2">•</span>
-                <span>Capacity: Accommodates up to 20 persons</span>
+                  <span className="mr-2">•</span>
+                  <span>Capacity: Accommodates up to 20 persons</span>
                 </li>
                 <li className="flex items-start">
-                <span className="mr-2">•</span>
-                <span>Rooms: A room for up to 10 persons</span>
+                  <span className="mr-2">•</span>
+                  <span>Rooms: A room for up to 10 persons</span>
                 </li>
                 <li className="flex items-start">
-                <span className="mr-2">•</span>
-                <span>Facilities: Kubo, 2 Rest Rooms, 1 Shower Area</span>
+                  <span className="mr-2">•</span>
+                  <span>Facilities: Kubo, 2 Rest Rooms, 1 Shower Area</span>
                 </li>
                 <li className="flex items-start">
-                <span className="mr-2">•</span>
-                <span>Recreational Facilities: Basketball court, Swimming Pool</span>
+                  <span className="mr-2">•</span>
+                  <span>Recreational Facilities: Basketball court, Swimming Pool</span>
                 </li>
                 <li className="flex items-start">
-                <span className="mr-2">•</span>
-                <span>Equipment: Complete cooking facilities</span>
+                  <span className="mr-2">•</span>
+                  <span>Equipment: Complete cooking facilities</span>
                 </li>
                 <li className="flex items-start">
-                <span className="mr-2">•</span>
-                <span>Connectivity: Wi-Fi connection</span>
+                  <span className="mr-2">•</span>
+                  <span>Connectivity: Wi-Fi connection</span>
                 </li>
                 <li className="flex items-start">
-                <span className="mr-2">•</span>
-                <span>Entertainment: Videoke, Smart TV</span>
+                  <span className="mr-2">•</span>
+                  <span>Entertainment: Videoke, Smart TV</span>
                 </li>
                 <li className="flex items-start">
-                <span className="mr-2">•</span>
-                <span>Parking: Available</span>
+                  <span className="mr-2">•</span>
+                  <span>Parking: Available</span>
                 </li>
-            </ul>
+              </ul>
             </div>
           </div>
 
