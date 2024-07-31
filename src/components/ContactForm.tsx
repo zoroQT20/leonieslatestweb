@@ -93,12 +93,12 @@ const ContactForm: React.FC<ContactFormProps> = ({ closeModal }) => {
             ></textarea>
           </div>
           <div>
-            <button
-              type="submit"
-              className="hover:shadow-form rounded-md bg-[#ffde59] py-3 px-8 text-base font-semibold text-white outline-none"
-            >
-              Submit
-            </button>
+          <button
+            type="submit"
+            className="relative rounded-md bg-[#ffde59] py-3 px-8 text-base font-semibold text-white outline-none transition-transform transform hover:scale-105 hover:shadow-lg"
+          >
+            Submit
+          </button>
           </div>
         </form>
       </div>
