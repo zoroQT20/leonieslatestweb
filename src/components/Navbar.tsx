@@ -1,12 +1,16 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import WaveLogo from '../pictures/wave logo.png';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  const isActive = (path: string) => location.pathname === path ? 'text-[#ffde59] after:block after:w-full after:h-0.5 after:bg-[#ffde59] after:absolute after:left-0 after:bottom-0' : 'text-white';
 
   return (
     <nav className="bg-gray-900 border-gray-900">
@@ -33,11 +37,11 @@ const Navbar: React.FC = () => {
           </svg>
         </button>
         <div className={`w-full md:block md:w-auto ${isOpen ? 'block' : 'hidden'}`} id="navbar-dropdown">
-        <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-900 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+          <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-900 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
             <li>
               <a 
                 href="/" 
-                className="block py-2 px-3 text-white rounded hover:bg-[#ffde59] hover:text-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-[#ffde59] md:p-0"
+                className={`block py-2 px-3 relative rounded hover:bg-[#ffde59] hover:text-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-[#ffde59] md:p-0 ${isActive('/')}`}
               >
                 Home
               </a>
@@ -45,7 +49,7 @@ const Navbar: React.FC = () => {
             <li>
               <a 
                 href="/about" 
-                className="block py-2 px-3 text-white rounded hover:bg-[#ffde59] hover:text-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-[#ffde59] md:p-0"
+                className={`block py-2 px-3 relative rounded hover:bg-[#ffde59] hover:text-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-[#ffde59] md:p-0 ${isActive('/about')}`}
               >
                 About
               </a>
@@ -53,7 +57,7 @@ const Navbar: React.FC = () => {
             <li>
               <a 
                 href="/contact" 
-                className="block py-2 px-3 text-white rounded hover:bg-[#ffde59] hover:text-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-[#ffde59] md:p-0"
+                className={`block py-2 px-3 relative rounded hover:bg-[#ffde59] hover:text-gray-900 md:hover:bg-transparent md:border-0 md:hover:text-[#ffde59] md:p-0 ${isActive('/contact')}`}
               >
                 Contact
               </a>
